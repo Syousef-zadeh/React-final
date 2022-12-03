@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{ text-decoration: none;
+    color: aliceblue;
+}
+a:hover{
+    color: #E94560;
+}
+.navBar{
+
+    margin-bottom: 3rem;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    list-style: none;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(4, 4, 81);
+    padding: 1.5rem;
+    direction: rtl;
+
+}
+
+.nav li{
+    margin: 0 1rem;
+    width: 5rem;
+}
+
+.footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    list-style: none;
+    padding: 1.5rem;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 98%;
+    height: 100%;   
+    color: aliceblue;
+    background-color: rgb(4, 4, 81);
+}
+.footerInfo{
+    text-align: center;
+    padding-right: 2rem;
+}
+hr.hrs{
+    width: 30%;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.735);
+}
+
+.shop-form{
+    margin:2rem 16rem;
+    box-shadow: 2px 4px 10px 5px rgba(4, 4, 81, 0.407);
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.button-shop{
+    padding: 4px;
+}
+
+.button-shop:hover {
+    background-color: rgb(1, 98, 255);
+    color: aliceblue;
+}
+.image{
+    text-align: center;
+}
+.home-img{
+    margin: 3rem;
+    box-sizing: border-box;
+    width: 70%;
+    height: 18rem;
+}
+.title{
+    text-align: center;
+    font-family: 'Noteworthy';
+}
+.serch-form{
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(.20, 0, 0.25, 0.50);
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    width: 70%;
+    margin: 1rem 12rem;
+    grid-template-columns: repeat(2, auto);
+}
+
+.search{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 2rem;
+    margin: 2rem 12rem 2rem 16rem;
+    gap: 1rem;
+}
+.align{
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 680px) {
+    .shop-form {
+      margin: 2rem 4rem;
+      font-size: 10px;
+
+    }
+    .title{
+        font-size: 15px;
+    }
+  }
