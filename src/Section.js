@@ -1,14 +1,19 @@
 import React, { Component } from "react";
-import Info from "./Jsons/infoList";
+import infoList from "./Jsons/infoList";
+import Info from "./Info";
+import style from './css/Style.module.css';
 
 class Section extends Component {
   render() {
     return (
-      <ul>
-        <h3 style={{ color: "blue" }}>{this.props.name}</h3>
-        {/* {Info.map((user, index)=>(
-            
-        ))} */}
+      <ul className={style.info}>
+        {infoList.map((user, index)=>(
+            <Info
+              name={user.name}
+              desc={user.desc}
+            />
+
+        ))}
       </ul>
     );
   }
