@@ -10,7 +10,9 @@ class Section extends Component {
         {infoList.map((user, index)=>(
             <Info
               name={user.name}
+              image={user.image}
               desc={user.desc}
+              key={index}
             />
 
         ))}

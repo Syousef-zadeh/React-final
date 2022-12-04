@@ -21,8 +21,8 @@ class Home extends Component {
         <div>
           <Section />
         </div>
-        <Search />
         <Login />
+        <Search />
       </div>
     );
   }

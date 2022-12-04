@@ -11,19 +11,21 @@ class Login extends Component {
   };
   render() {
     return (
-      <div className={styles.Login}>
+      <div className={styles.login}>
         <form className={styles["shop-form"]} onSubmit={this.goToShop}>
           <p>See My Result</p>
-          <input
-            className="shop-input"
-            type="text"
-            placeholder="UserId"
-            ref={this.myInput}
-            required
-          />
-          <button className={styles["button-shop"]} type="submit">
-            Login
-          </button>
+          <div className={styles.result}>
+            <input
+              className="shop-input"
+              type="text"
+              placeholder="UserId"
+              ref={this.myInput}
+              required
+            />
+            <button className={styles["button-shop"]} type="submit">
+              Go
+            </button>
+          </div>
         </form>
       </div>
     );
