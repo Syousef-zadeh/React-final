@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import listOfUser from "./testList";
-import styles from "./Style.module.css";
+import listOfUser from "./Jsons/testList";
+import styles from "./css/Style.module.css";
 
 function Search(userInfo) {
   const [search, setSearch] = useState("");
@@ -19,7 +19,7 @@ function Search(userInfo) {
         className={styles.search}
         required
         type="text"
-        placeholder="Search user"
+        placeholder="Search test"
         onChange={(event) => {
           setSearch(event.target.value);
         }}

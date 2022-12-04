@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Login from "./Login";
 import Search from "./Search";
-import styles from "./Style.module.css";
+import Section from "./Section";
+import styles from "./css/Style.module.css";
 
 class Home extends Component {
   render() {
@@ -16,6 +17,9 @@ class Home extends Component {
             src="/medicalLab.png"
             alt="medical-lab"
           />
+        </div>
+        <div>
+          <Section />
         </div>
         <Search />
         <Login />

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "./Style.module.css";
+import styles from "./css/Style.module.css";
 
 class Login extends Component {
   myInput = React.createRef();
