@@ -9,7 +9,8 @@ class Router extends Component {
         <BrowserRouter>
         <Switch>
             <Route exact path="/" component={App} />
-            <Route path="/results/:patientId" component={Result} />
+            <Route path="/result/:resultId" component={Result} />
+            <Route  path="/services" component={Result} />
             {/* <Route component={NotFound} /> */}
         </Switch>
       </BrowserRouter>
