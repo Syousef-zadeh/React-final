@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import styles from "./css/Style.module.css";
+import styles from "../css/Style.module.css";
 
 class Login extends Component {
   myInput = React.createRef();
@@ -7,13 +7,13 @@ class Login extends Component {
     console.log(this.props);
     e.preventDefault();
     const urlPath = this.myInput.current.value;
-    this.props.history.push(`/results/${urlPath}`);
+    this.props.history.push(`/login/${urlPath}`);
   };
   render() {
     return (
       <div className={styles.login}>
         <form className={styles["shop-form"]} onSubmit={this.goToShop}>
-          <p>See My Result</p>
+          <p>Login as an Admin</p>
           <div className={styles.result}>
             <input
               className="shop-input"

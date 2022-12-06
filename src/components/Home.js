@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Login from "./Login";
 import Search from "./Search";
 import Section from "./Section";
-import styles from "./css/Style.module.css";
+import styles from "../css/Style.module.css";
 
 class Home extends Component {
   render() {
@@ -21,7 +21,7 @@ class Home extends Component {
         <div>
           <Section />
         </div>
-        <Login />
+        {/* <Login /> */}
         <Search />
       </div>
     );

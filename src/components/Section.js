@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import infoList from "./Jsons/infoList";
+import infoList from "../Jsons/infoList";
 import Info from "./Info";
-import style from './css/Style.module.css';
+import style from '../css/Style.module.css';
 
 class Section extends Component {
   render() {

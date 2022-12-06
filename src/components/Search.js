@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import listOfUser from "./Jsons/testList";
-import styles from "./css/Style.module.css";
+import listOfUser from "../Jsons/testList";
+import styles from "../css/Style.module.css";
 
 function Search(userInfo) {
   const [search, setSearch] = useState("");
@@ -46,29 +46,6 @@ function Search(userInfo) {
                 </div>
               </div>
 
-              {visibleDetails && (
-                <div className={styles["find-user"]} key={key}>
-                  <div>
-                    <p>Company Name</p>
-                    <h3 className="comp-name">{user.company.name}</h3>
-                    <button
-                      className="btn-back"
-                      type="submit"
-                      onClick={handleClick}
-                    >
-                      Back to search
-                    </button>
-                  </div>
-                  <div>
-                    <p>
-                      {user.address.city}
-                      {user.address.street}
-                      {user.address.suite}
-                    </p>
-                    <div>{user.phone}</div>
-                  </div>
-                </div>
-              )}
             </div>
           );
         })}
