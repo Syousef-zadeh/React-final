@@ -69,7 +69,7 @@ hr.hrs{
 
 .login{
     width: 30%;
-    margin: 2rem 28rem;
+    margin: 10rem 28rem;
 }
 
 
@@ -153,6 +153,7 @@ hr.hrs{
     .login{
         display: flex;
         flex-direction: row;
+        text-align: center;
         margin: 2rem 2.5rem;
     }
     .infoCard{
